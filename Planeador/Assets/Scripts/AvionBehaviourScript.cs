@@ -46,6 +46,8 @@ public class AvionBehaviourScript : MonoBehaviour {
         Debug.Log("Muero");
         Invoke("VolverVulnerable",1.5f);
     }
+
+
     public void VolverVulnerable()
     {
         this.GetComponent<Collider2D>().isTrigger = false;
