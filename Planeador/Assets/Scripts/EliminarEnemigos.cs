@@ -10,9 +10,10 @@ public class EliminarEnemigos : MonoBehaviour {
 
     }
 
-    void OnCollision2DEnter(Collider2D col)
+    void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.tag == "Camara")
+        
+        if (col.gameObject.tag == "MainCamera" || col.gameObject.tag == "Player")
         {
             Destroy(this.gameObject);
         }
