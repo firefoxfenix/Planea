@@ -22,7 +22,7 @@ public class Movimiento_ZigZag : MonoBehaviour {
         {
             limite = Random.Range(3, 30);
 
-            Debug.Log(limite + "- 1 -" + cont);
+            
             if (arriba == true)
                 arriba = false;
             else
@@ -44,8 +44,7 @@ public class Movimiento_ZigZag : MonoBehaviour {
                 this.transform.Translate(Vector3.left * speed * Time.deltaTime);
             }
 
-            Debug.Log(limite + "- 2 -" + cont);
-            
+                       
             cont++;
         }
 
